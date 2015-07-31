@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Address Organisation Tool',
-	'description' => '',
+	'description' => 'This address organisation tool is developed to help store a little more complex address data and display it. It is possible to create organisations and persons and because of the relations between them and the possibility to combine them into groups.',
 	'category' => 'plugin',
 	'author' => '599media',
 	'author_email' => 'info@599media.de',
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => '1',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.0',
+	'version' => '1.0.1',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '6.2.1-6.2.99',
