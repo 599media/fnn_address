@@ -24,6 +24,9 @@ The extension can be installed via the Extension Manager.
  * use the default layout only or add new layout options via TSConfig
  * set the right storagePid(s)
 
+The Extension can also be found on GitHub https://github.com/599media/fnn_address
+Please feel free to also leave your comments and/or suggestions for a better extension.
+
 
 .. _admin-configuration:
 
