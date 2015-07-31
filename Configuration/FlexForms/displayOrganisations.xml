@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <!-- <langChildren>1</langChildren>!-->
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.choose>
+                        <TCEforms>
+                            <onChange>reload</onChange>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:select_field.choose</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.choose.all</numIndex>
+                                        <numIndex index="1">all</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.choose.by_group</numIndex>
+                                        <numIndex index="1">by_group</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.choose.by_category</numIndex>
+                                        <numIndex index="1">by_category</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.choose.organisation</numIndex>
+                                        <numIndex index="1">organisation</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.choose>
+
+                    <settings.withPersons>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.labels.with_persons</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.withPersons>
+
+                    <settings.chosenByGroup>
+                        <TCEforms>
+                            <displayCond>FIELD:settings.choose:=:by_group</displayCond>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.labels.chosen_by_group</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_fnnaddress_domain_model_group</allowed>
+                                <foreign_table>tx_fnnaddress_domain_model_group</foreign_table>
+                                <maxitems>9999</maxitems>
+                                <size>10</size>
+                            </config>
+                        </TCEforms>
+                    </settings.chosenByGroup>
+                    <settings.chosenByCategory>
+                        <TCEforms>
+                            <displayCond>FIELD:settings.choose:=:by_category</displayCond>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.labels.chosen_by_category</label>
+                            <config>
+                                <type>select</type>
+                                <renderMode>tree</renderMode>
+                                <treeConfig>
+                                    <parentField>parent</parentField>
+                                    <appearance>
+                                        <showHeader>TRUE</showHeader>
+                                        <expandAll>TRUE</expandAll>
+                                        <maxLevels>99</maxLevels>
+                                        <width>400</width>
+                                    </appearance>
+                                </treeConfig>
+                                <foreign_table>sys_category</foreign_table>
+                                <foreign_table_where> AND (sys_category.sys_language_uid = 0 OR sys_category.l10n_parent = 0) ORDER BY sys_category.sorting</foreign_table_where>
+                                <size>15</size>
+                                <autoSizeMax>20</autoSizeMax>
+                                <minitems>0</minitems>
+                                <maxitems>99</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.chosenByCategory>
+                    <settings.chosenOrganisations>
+                        <TCEforms>
+                            <displayCond>FIELD:settings.choose:=:organisation</displayCond>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.labels.chosen_organisations</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_fnnaddress_domain_model_organisation</allowed>
+                                <foreign_table>tx_fnnaddress_domain_model_organisation</foreign_table>
+                                <maxitems>9999</maxitems>
+                                <size>10</size>
+                            </config>
+                        </TCEforms>
+                    </settings.chosenOrganisations>
+
+                    <settings.orderingField>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.lables.ordering_field</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.ordering_field.name</numIndex>
+                                        <numIndex index="1">name</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.organisation.ordering_field.alternative_name</numIndex>
+                                        <numIndex index="1">alternative_name</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderingField>
+                    <settings.orderingOption>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.labels.ordering_option</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.ordering_option.ascending</numIndex>
+                                        <numIndex index="1">ORDER_ASCENDING</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.ordering_option.descending</numIndex>
+                                        <numIndex index="1">ORDER_DESCENDING</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderingOption>
+
+                </el>
+            </ROOT>
+        </sDEF>
+
+        <layout>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.layout</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.templateLayout>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.template_layout</label>
+                            <config>
+                                <type>select</type>
+                                <itemsProcFunc>Fnn\FnnAddress\Hooks\ItemsProcFunc->getLayouts</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </settings.templateLayout>
+
+                    <settings.mainListPid>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.labels.main_list_pid</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.mainListPid>
+
+                </el>
+            </ROOT>
+        </layout>
+
+        <resources>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.resources</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.resourcePid>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.labels.resource_pid</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.resourcePid>
+
+                </el>
+            </ROOT>
+        </resources>
+
+    </sheets>
+</T3DataStructure>

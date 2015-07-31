@@ -1,0 +1,11 @@
+{namespace fnn=Fnn\FnnAddress\ViewHelpers}
+
+<f:render partial="Organisation/VCard" arguments="{organisation:organisation}" />
+
+<f:if condition="{organisation.contents}">
+    <div class="custom-content">
+        <f:for each="{organisation.contents}" as="contentElement">
+            <fnn:Content uid="{contentElement.localizedUid}"/>
+        </f:for>
+    </div>
+</f:if>

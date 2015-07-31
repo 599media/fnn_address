@@ -1,0 +1,17 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:render partial="Organisation/SingleView" arguments="{organisation:organisation}" />
+
+<f:if condition="{settings.mainListPid}">
+    <f:then>
+        <f:link.action action="list" pageUid="{settings.mainListPid}"><f:translate key="plugin.back_to_list"/></f:link.action>
+    </f:then>
+    <f:else>
+        <f:link.action action="list"><f:translate key="plugin.back_to_list"/></f:link.action>
+    </f:else>
+</f:if>
+
+</f:section>

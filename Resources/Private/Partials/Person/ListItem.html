@@ -1,0 +1,24 @@
+<f:if condition="{settings.mainListPid}">
+    <f:then>
+        <f:link.action action="show" pageUid="{settings.mainListPid}" arguments="{person:person}">
+            <f:render section="ListItem" arguments="{person:person}"/>
+        </f:link.action>
+    </f:then>
+    <f:else>
+        <f:link.action action="show" arguments="{person:person}">
+            <f:render section="ListItem" arguments="{person:person}"/>
+        </f:link.action>
+    </f:else>
+</f:if>
+
+<!-- Sections -->
+<f:section name="ListItem">
+    <h3>{person.firstName} {person.lastName}</h3>
+    <f:if condition="{settings.withRelated}">
+        <ul>
+            <f:for each="{person.relatedPersons}" as="relatedPerson">
+                <li>{relatedPerson.firstName} {relatedPerson.middleName} {relatedPerson.lastName}</li>
+            </f:for>
+        </ul>
+    </f:if>
+</f:section>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-19T09:19:18Z" product-name="fnn_address">
+		<header/>
+		<body>
+
+            <!--
+                SelectBoxes
+            -->
+
+			<trans-unit id="select_field.choose">
+				<source>Choose</source>
+			</trans-unit>
+			<trans-unit id="gender.female">
+				<source>female</source>
+			</trans-unit>
+			<trans-unit id="gender.male">
+				<source>male</source>
+			</trans-unit>
+
+            <!--
+                TCA
+            -->
+
+            <trans-unit id="tca_palettes.access">
+                <source>Access</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.general_address">
+                <source>General Information</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.location">
+                <source>Coordinates</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.details">
+                <source>Detailed Information</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.contact">
+                <source>Contact Information</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.names">
+                <source>General Information</source>
+            </trans-unit>
+            <trans-unit id="tca_palettes.categories">
+                <source>Categories</source>
+            </trans-unit>
+
+            <trans-unit id="tca_tabs.relations">
+                <source>Relations</source>
+            </trans-unit>
+            <trans-unit id="tca_tabs.contents">
+                <source>Content Elements</source>
+            </trans-unit>
+
+            <!--
+                FlexForm
+            -->
+
+            <!-- General -->
+
+            <trans-unit id="flexform.tabs.general">
+                <source>General Options</source>
+            </trans-unit>
+            <trans-unit id="flexform.tabs.layout">
+                <source>Layout Options</source>
+            </trans-unit>
+            <trans-unit id="flexform.tabs.resources">
+                <source>Resource Options</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.labels.template_layout">
+                <source>Choose a Layout</source>
+            </trans-unit>
+            <trans-unit id="flexform.lables.ordering_field">
+                <source>Order by:</source>
+            </trans-unit>
+            <trans-unit id="flexform.lables.ordering_option">
+                <source>Ordering Option</source>
+            </trans-unit>
+            <trans-unit id="flexform.labels.resource_pid">
+                <source>Resource Page</source>
+            </trans-unit>
+            <trans-unit id="flexform.labels.choose">
+                <source>Please choose a display option:</source>
+            </trans-unit>
+            <trans-unit id="flexform.labels.main_list_pid">
+                <source>Page with Main List</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.ordering_option.ascending">
+                <source>Ascending</source>
+            </trans-unit>
+            <trans-unit id="flexform.ordering_option.descending">
+                <source>Descending</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.layout.default_list">
+                <source>Simple List</source>
+            </trans-unit>
+
+            <!-- Display Groups -->
+
+            <trans-unit id="flexform.groups.chosen_groups">
+                <source>Display these groups: </source>
+            </trans-unit>
+            <trans-unit id="flexform.groups.display_persons">
+                <source>List group's persons</source>
+            </trans-unit>
+            <trans-unit id="flexform.groups.display_organisations">
+                <source>List group's organisations</source>
+            </trans-unit>
+            <trans-unit id="flexform.groups.ordering_field.name">
+                <source>Group Name</source>
+            </trans-unit>
+
+            <!-- Dispplay Persons-->
+
+            <trans-unit id="flexform.person.choose.all">
+                <source>Show all persons</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.choose.by_group">
+                <source>Show persons belonging to chosen groups</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.choose.by_organisation">
+                <source>Show persons belonging to chosen organisations</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.choose.by_category">
+                <source>Show persons belonging to chosen categories</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.choose.persons">
+                <source>Show chosen persons</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.person.labels.with_related_persons">
+                <source>Show related Persons</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.labels.chosen_by_group">
+                <source>Display all Persons belonging to these groups:</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.labels.chosen_by_organisation">
+                <source>Display all Persons belonging to these organisations:</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.labels.chosen_by_category">
+                <source>Display all Persons belonging to these categories:</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.labels.chosen_persons">
+                <source>Display these persons:</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.person.ordering_field.first_name">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.ordering_field.middle_name">
+                <source>Middle Name</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.ordering_field.last_name">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="flexform.person.ordering_field.name">
+                <source>Name</source>
+            </trans-unit>
+
+            <!-- Dispplay Organisations-->
+
+            <trans-unit id="flexform.organisation.choose.all">
+                <source>Show all organisations</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.choose.by_group">
+                <source>Show all organisations contained by groups</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.choose.by_category">
+                <source>Show all organisations related to categories</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.choose.organisation">
+                <source>Show chosen organisations</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.organisation.labels.with_persons">
+                <source>Show organisation's persons</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.labels.chosen_by_group">
+                <source>Display all Organisations belonging to these groups:</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.labels.chosen_by_category">
+                <source>Display all Organisations belonging to these categories:</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.labels.chosen_organisations">
+                <source>Display these organisations:</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.organisation.ordering_field.name">
+                <source>Organisation Name</source>
+            </trans-unit>
+            <trans-unit id="flexform.organisation.ordering_field.alternative_name">
+                <source>Alternative Name</source>
+            </trans-unit>
+			
+			<!--
+				Model
+			-->
+
+			<trans-unit id="tx_fnnaddress_domain_model_person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.middle_name">
+				<source>Middle Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.related_persons">
+				<source>Related Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.related_persons_from">
+				<source>Related Persons (from)</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.address">
+				<source>Address Data</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.groups">
+				<source>Groups</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_person.organisation">
+				<source>Organisation</source>
+			</trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.contents">
+                <source>Content Elements</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.categories">
+                <source>Categories</source>
+            </trans-unit>
+
+			<trans-unit id="tx_fnnaddress_domain_model_address">
+				<source>Address Data</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.location_title">
+				<source>Location Title</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.street_address">
+				<source>Street Address</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.region">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.building">
+				<source>Building</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.room">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_address.web">
+				<source>Web</source>
+			</trans-unit>
+
+			<trans-unit id="tx_fnnaddress_domain_model_organisation">
+				<source>Organisation</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.alternative_name">
+				<source>Alternative Name</source>
+			</trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.note">
+                <source>Note</source>
+            </trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.address">
+				<source>Address Data</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.persons">
+				<source>Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.groups">
+				<source>Groups</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_organisation.contents">
+				<source>Content Elements</source>
+			</trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.categories">
+                <source>Categories</source>
+            </trans-unit>
+
+			<trans-unit id="tx_fnnaddress_domain_model_group">
+				<source>Group</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_group.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_group.persons">
+				<source>Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_fnnaddress_domain_model_group.organisations">
+				<source>Organisations</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

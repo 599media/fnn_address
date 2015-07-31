@@ -1,0 +1,1 @@
+These images are taken from http://lorempixel.com

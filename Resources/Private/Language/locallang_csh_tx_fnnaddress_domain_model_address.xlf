@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-19T09:19:18Z" product-name="fnn_address">
+		<header/>
+		<body>
+			<trans-unit id="street_address.description">
+				<source>Street and house number</source>
+			</trans-unit>
+			<trans-unit id="city.description">
+				<source>city</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>zip</source>
+			</trans-unit>
+			<trans-unit id="country.description">
+				<source>country</source>
+			</trans-unit>
+			<trans-unit id="region.description">
+				<source>region</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>telephone</source>
+			</trans-unit>
+			<trans-unit id="web.description">
+				<source>web</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

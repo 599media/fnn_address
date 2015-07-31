@@ -1,0 +1,11 @@
+tx_fnn_address {
+    personLayouts {
+        99 = LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.layout.default_list
+    }
+    organisationLayouts {
+        99 = LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.layout.default_list
+    }
+    groupLayouts {
+        99 = LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.layout.default_list
+    }
+}

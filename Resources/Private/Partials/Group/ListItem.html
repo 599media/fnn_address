@@ -1,0 +1,15 @@
+<h2><f:link.action action="show" arguments="{group:group}">{group.name}</f:link.action></h2>
+<f:if condition="{showPersons}">
+    <ul>
+        <f:for each="{group.persons}" as="person">
+            <li>{person.title} {person.firstName} {person.lastName}</li>
+        </f:for>
+    </ul>
+</f:if>
+<f:if condition="{showOrganisations}">
+    <ul>
+        <f:for each="{group.organisations}" as="organisation">
+            <li>{organisation.name}</li>
+        </f:for>
+    </ul>
+</f:if>

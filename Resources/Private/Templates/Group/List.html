@@ -1,0 +1,14 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <f:if condition="{settings.templateLayout} == 99">
+        <f:then>
+            <f:for each="{groups}" as="group">
+                <f:render partial="Group/ListItem" arguments="{group:group, showPersons:showPersons, showOrganisations:showOrganisations}"/>
+            </f:for>
+        </f:then>
+    </f:if>
+
+</f:section>

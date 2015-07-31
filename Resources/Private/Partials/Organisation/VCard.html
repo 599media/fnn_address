@@ -1,0 +1,27 @@
+<div class="h-card">
+    <f:if condition="{organisation.images}">
+        <f:then>
+            <div class="u-photo">
+                <f:image src="{organisation.firstImage.originalResource.publicUrl}" alt="{organisation.firstImage.originalResource.alternative}" title="{organisation.firstImage.originalResource.title}" width="150c" height="150c"/>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="u-photo">
+                <f:image src="typo3conf/ext/fnn_address/Resources/Public/Images/Organisation.jpg" width="150c" height="150c"/>
+            </div>
+        </f:else>
+    </f:if>
+    <div class="singleview_information">
+        <h3 class="p-org">{organisation.name}</h3>
+        <p class="h-adr">
+            <f:if condition="{organisation.address.streetAddress}"><span class="p-street-address">{organisation.address.streetAddress}</span><br/></f:if>
+            <f:if condition="{organisation.address.zip}"><span class="p-postal-code">{organisation.address.zip}</span></f:if><f:if condition="{organisation.address.city}"> <span class="p-locality">{organisation.address.city}</span><br/></f:if>
+            <f:if condition="{organisation.address.region}"><span class="p-region">{organisation.address.region}</span>, </f:if><f:if condition="{organisation.address.country}"><span class="p-country-name">{organisation.address.country.shortNameEn}</span></f:if>
+        </p>
+        <p class="contact">
+            <f:if condition="{organisation.address.telephone}"><f:translate key="tx_fnnaddress_domain_model_address.telephone"/>: <span class="p-tel">{organisation.address.telephone}</span><br/></f:if>
+            <f:if condition="{organisation.address.email}"><f:link.email email="{organisation.address.email}"><span class="u-email">{organisation.address.email}</span></f:link.email><br/></f:if>
+            <f:if condition="{organisation.address.web}"><f:link.external uri="{organisation.address.web}"><span class="u-url">{organisation.address.web}</span></f:link.external></f:if>
+        </p>
+    </div>
+</div>

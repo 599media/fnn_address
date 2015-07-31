@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <!-- <langChildren>1</langChildren>!-->
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.chosenGroups>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.groups.chosen_groups</label>
+                            <config>
+                                <type>select</type>
+                                <foreign_table>tx_fnnaddress_domain_model_group</foreign_table>
+                                <maxitems>9999</maxitems>
+                                <size>10</size>
+                            </config>
+                        </TCEforms>
+                    </settings.chosenGroups>
+
+                    <settings.displayPersons>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.groups.display_persons</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.displayPersons>
+                    <settings.displayOrganisations>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.groups.display_organisations</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.displayOrganisations>
+
+                    <settings.orderingField>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.labels.ordering_field</label>
+                            <section>1</section>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.groups.ordering_field.name</numIndex>
+                                        <numIndex index="1">name</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderingField>
+                    <settings.orderingOption>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.lables.ordering_option</label>
+                            <section>1</section>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.ordering_option.ascending</numIndex>
+                                        <numIndex index="1">ORDER_ASCENDING</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.ordering_option.descending</numIndex>
+                                        <numIndex index="1">ORDER_DESCENDING</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderingOption>
+
+                </el>
+            </ROOT>
+        </sDEF>
+
+        <layout>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.layout</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.templateLayout>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.labels.template_layout</label>
+                            <config>
+                                <type>select</type>
+                                <itemsProcFunc>Fnn\FnnAddress\Hooks\ItemsProcFunc->getLayouts</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </settings.templateLayout>
+
+                </el>
+            </ROOT>
+        </layout>
+
+        <resources>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.tabs.resources</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.resourcePid>
+                        <TCEforms>
+                            <label>LLL:EXT:fnn_address/Resources/Private/Language/locallang_backend.xlf:flexform.resource_pid</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.resourcePid>
+
+                </el>
+            </ROOT>
+        </resources>
+        
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,80 @@
+[globalVar = GP:tx_fnnaddress_displaypersons|person > 0]
+    config.defaultGetVars.tx_fnnaddress_displaypersons.action = show
+    config.defaultGetVars.tx_fnnaddress_displaypersons.controller = Person
+[GLOBAL]
+
+[globalVar = GP:tx_fnnaddress_displayorganisations|organisation > 0]
+    config.defaultGetVars.tx_fnnaddress_displayorganisations.action = show
+    config.defaultGetVars.tx_fnnaddress_displayorganisations.controller = Organisation
+[GLOBAL]
+
+plugin.tx_fnnaddress {
+
+	view {
+		templateRootPaths {
+			0 = {$plugin.tx_fnnaddress.view.templateRootPath}
+		}
+		partialRootPaths {
+			0 = {$plugin.tx_fnnaddress.view.partialRootPath}
+		}
+		layoutRootPaths{
+			0 = {$plugin.tx_fnnaddress.view.layoutRootPath}
+		}
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_fnnaddress.persistence.storagePid}
+	}
+}
+
+config.tx_extbase.persistence.classes {
+	Fnn\FnnAddress\Domain\Model\Content {
+		mapping {
+			tableName = tt_content
+		}
+	}
+}
+
+plugin.tx_fnnaddress._CSS_DEFAULT_STYLE (
+
+    .u-photo{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .singleview_information{
+        display: inline-block;
+    }
+
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-fnn-address table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-fnn-address table th {
+		font-weight:bold;
+	}
+
+	.tx-fnn-address table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

@@ -1,0 +1,17 @@
+{namespace fnn=Fnn\FnnAddress\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <f:if condition="{settings.templateLayout} == 99">
+        <f:then>
+            <div class="fnn-address-list">
+                <f:for each="{persons}" as="person">
+                    <f:render partial="Person/ListItem" arguments="{person:person}"/>
+                </f:for>
+            </div>
+        </f:then>
+    </f:if>
+
+</f:section>

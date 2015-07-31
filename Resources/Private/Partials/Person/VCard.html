@@ -1,0 +1,37 @@
+{namespace fnn=Fnn\FnnAddress\ViewHelpers}
+
+<div class="h-card">
+    <f:if condition="{person.images}">
+        <f:then>
+            <div class="u-photo">
+                <f:image src="{person.firstImage.originalResource.publicUrl}" alt="{person.firstImage.originalResource.alternative}" title="{person.firstImage.originalResource.title}" width="150c" height="150c"/>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="u-photo">
+                <f:image src="typo3conf/ext/fnn_address/Resources/Public/Images/Person.jpg" width="150c" height="150c"/>
+            </div>
+        </f:else>
+    </f:if>
+    <div class="singleview_information">
+        <h3 class="p-name"><span class="p-given-name">{person.firstName}</span> <span class="p-additional-name">{person.middleName}</span> <span class="p-family-name">{person.lastName}</span></h3>
+        <p class="h-adr">
+            <f:if condition="{person.address.streetAddress}"><span class="p-street-address">{person.address.streetAddress}</span><br/></f:if>
+            <f:if condition="{person.address.zip}"><span class="p-postal-code">{person.address.zip}</span></f:if><f:if condition="{person.address.city}"> <span class="p-locality">{person.address.city}</span><br/></f:if>
+            <f:if condition="{person.address.region}"><span class="p-region">{person.address.region}</span>, </f:if><f:if condition="{person.address.country}"><span class="p-country-name">{person.address.country.shortNameEn}</span></f:if>
+        </p>
+        <p class="contact">
+            <f:if condition="{person.address.telephone}"><f:translate key="tx_fnnaddress_domain_model_address.telephone"/>: <span class="p-tel">{person.address.telephone}</span><br/></f:if>
+            <f:if condition="{person.address.email}"><f:link.email email="{person.address.email}"><span class="u-email">{person.address.email}</span></f:link.email><br/></f:if>
+            <f:if condition="{person.address.web}"><f:link.external uri="{person.address.web}"><span class="u-url">{person.address.web}</span></f:link.external></f:if>
+        </p>
+    </div>
+</div>
+
+<f:if condition="{person.contents}">
+    <div class="custom-content">
+        <f:for each="{person.contents}" as="contentElement">
+            <fnn:Content uid="{contentElement.uid}"/>
+        </f:for>
+    </div>
+</f:if>

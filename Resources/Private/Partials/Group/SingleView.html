@@ -1,0 +1,16 @@
+
+<h1>{group.name}</h1>
+
+<h2><f:translate key="tx_fnnaddress_domain_model_organisation"/></h2>
+<ul>
+    <f:for each="{group.organisations}" as="organisation">
+        <li>{organisation.name}</li>
+    </f:for>
+</ul>
+
+<h2><f:translate key="tx_fnnaddress_domain_model_person"/></h2>
+<ul>
+    <f:for each="{group.persons}" as="person">
+        <li>{person.title} {person.firstName} {person.lastName}</li>
+    </f:for>
+</ul>

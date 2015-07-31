@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-18T10:02:21Z" product-name="fnn_address">
+        <header/>
+        <body>
+
+            <!--
+                View
+            -->
+
+            <trans-unit id="plugin.back_to_list">
+                <source>Back to list</source>
+            </trans-unit>
+
+            <!--
+                Model
+            -->
+
+            <trans-unit id="tx_fnnaddress_domain_model_person">
+                <source>Person</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.first_name">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.middle_name">
+                <source>Middle Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.last_name">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.gender">
+                <source>Gender</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.birthday">
+                <source>Birthday</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.position">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.images">
+                <source>Images</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.related_persons">
+                <source>Related Persons</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.related_persons_from">
+                <source>Related Persons (from)</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.address">
+                <source>Address Data</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.groups">
+                <source>Groups</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.organisation">
+                <source>Organisation</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.contents">
+                <source>Content Elements</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_person.categories">
+                <source>Categories</source>
+            </trans-unit>
+
+            <trans-unit id="tx_fnnaddress_domain_model_address">
+                <source>Address Data</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.location_title">
+                <source>Location Title</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.street_address">
+                <source>Street Address</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.region">
+                <source>Region</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.building">
+                <source>Building</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.room">
+                <source>Room</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.latitude">
+                <source>Latitude</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.longitude">
+                <source>Longitude</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.telephone">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.mobile">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_address.web">
+                <source>Web</source>
+            </trans-unit>
+
+            <trans-unit id="tx_fnnaddress_domain_model_organisation">
+                <source>Organisation</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.alternative_name">
+                <source>Alternative Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.note">
+                <source>Note</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.images">
+                <source>Images</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.address">
+                <source>Address Data</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.persons">
+                <source>Persons</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.groups">
+                <source>Groups</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.contents">
+                <source>Content Elements</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_organisation.categories">
+                <source>Categories</source>
+            </trans-unit>
+
+            <trans-unit id="tx_fnnaddress_domain_model_group">
+                <source>Group</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_group.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_group.persons">
+                <source>Persons</source>
+            </trans-unit>
+            <trans-unit id="tx_fnnaddress_domain_model_group.organisations">
+                <source>Organisations</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
